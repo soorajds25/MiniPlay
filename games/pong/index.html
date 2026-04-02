@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Pong - MiniPlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../index.html" class="nav-logo">MiniPlay</a>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#games">Games</a></li>
+            <li><a href="../../about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1 class="logo">Emoji Pong</h1>
+            <div class="controls">
+                <a href="../../index.html" class="neon-btn back-btn">Back to Home</a>
+            </div>
+        </header>
+
+        <div class="game-container">
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            
+            <div id="start-overlay" class="overlay">
+                <h2>Press Space to Serve</h2>
+                <p>P1: W/S Keys | P2: Up/Down Arrows</p>
+            </div>
+            
+            <div id="game-over-overlay" class="overlay hidden">
+                <h2 id="win-text">Player Wins!</h2>
+                <button id="restart-btn" class="neon-btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

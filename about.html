@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MiniPlay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .about-card {
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+            border-radius: 20px;
+            padding: 50px;
+            max-width: 700px;
+            margin: 40px auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.1);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .about-card h1 {
+            font-family: 'Orbitron', sans-serif;
+            color: #38bdf8;
+            margin-bottom: 20px;
+            text-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+        }
+
+        .about-card p {
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: #cbd5e1;
+        }
+
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            text-align: left;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+        }
+
+        .detail-item h3 {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            color: #38bdf8;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .detail-item p {
+            margin-bottom: 0;
+            color: #f1f5f9;
+            font-weight: 500;
+        }
+
+        .team-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .team-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        .team-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #38bdf8;
+        }
+
+        @media (max-width: 600px) {
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">MiniPlay</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#games">Games</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="about-card">
+            <h1>MiniPlay</h1>
+            <p>A professional arcade-style platform featuring high-performance mini-games built using pure HTML, CSS, and Vanilla JavaScript. Designed with a focus on smooth animations, neon aesthetics, and glassmorphism principles.</p>
+            
+            <div class="details-grid">
+                <div class="detail-item">
+                    <h3>Project Team</h3>
+                    <ul class="team-list">
+                        <li>Sooraj D S</li>
+                        <li>Sreeraj R S</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h3>Academic Details</h3>
+                    <p>Course: GXEST203</p>
+                    <p>Foundations of Computations</p>
+                </div>
+                <div class="detail-item">
+                    <h3>College</h3>
+                    <p>College of Engineering Trivandrum</p>
+                </div>
+                <div class="detail-item">
+                    <h3>Year</h3>
+                    <p>2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
